@@ -14,12 +14,18 @@ import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import DiretaPai from "./components/comunicacao/DiretaPai";
 import DiretaFilho from "./components/comunicacao/DiretaFilho";
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
+import Contador from "./components/contador/Contador";
+
 
 export default () =>(
     <div className='App'>
             <h1>Fundamentos React</h1>
 
             <div className="Cards">
+
+                <Card titulo = "#12 - Contador" color = "#E45F56">
+                    <Contador numeroInicial={10}></Contador>
+                </Card>
 
                 <Card titulo = "#10 - Comunicação Indireta" color = "#8BAD39">
                     <IndiretaPai></IndiretaPai>
